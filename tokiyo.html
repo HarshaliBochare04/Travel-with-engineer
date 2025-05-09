@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tokyo Tour - Travel and Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #000000, #000000, #000000);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d3d3d3;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0c14b;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .text-box {
+      flex: 1 1 500px;
+    }
+
+    .text-box h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .text-box p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    .image-box {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .text-box h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Travel and Tour</div>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="Destination.html">Destinations</a>
+      <a href="services.html">Services</a>
+      <a href="map.html">Map</a>
+      <a href="offers.html">Offers</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="text-box">
+      <h1>Explore Tokyo, Japan</h1>
+      <p>Discover a vibrant city where tradition meets innovation. Wander through ancient temples, feel the buzz of Shibuya Crossing, and marvel at the skyline from Tokyo Tower. Tokyo is a city that never stops surprising you.</p>
+    </div>
+    <div class="image-box">
+      <img src="images/tokyo.jpg" alt="Tokyo Cityscape">
+    </div>
+  </section>
+</body>
+</html>

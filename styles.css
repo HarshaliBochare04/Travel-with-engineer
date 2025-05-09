@@ -1,0 +1,231 @@
+/* Existing CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+
+}
+
+.navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background-image: url('images/hero-image.jpg');
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  display: flex;
+  height: 100%; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10%;
+  width: 100%; 
+  position: relative;
+}
+
+.hero-left {
+  flex: 1; /* Take up remaining space */
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: flex-end; /* align to the right horizontally */
+  text-align: right;
+}
+
+.hero-right h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 8.8rem;
+  line-height: 1.2;
+  text-align: center; /* Align text within the right section */
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.hero-right p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 40px; /* Adjust vertical padding as needed */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align left and right content */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left p {
+  font-size: 0.9rem; /* Adjust font size */
+  line-height: 1.4; /* Adjust line height */
+  margin-bottom: 0; /* Remove any default bottom margin */
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right p {
+  font-size: 0.8rem; /* Copyright font size */
+  margin-bottom: 0; /* Remove any default bottom margin */
+}
+
+/* Animations */
+
+/* Fade-in for the hero text */
+.hero-right h1,
+.hero-right p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s; /* Delay the animation slightly */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in for the navbar links */
+.nav-links a {
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: slideInNav 0.5s forwards;
+  animation-delay: calc(0.2s * var(--nav-item-index)); /* Stagger the animation */
+  position: relative; /* Add relative positioning */
+  overflow: hidden;   /* Clip the underline */
+}
+
+@keyframes slideInNav {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Underline animation for navbar links */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0); /* Initially hide the underline */
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1); /* Show the underline on hover */
+}
+
+/* Animation for the footer text */
+.footer-left p {
+  animation: slideInFooter 1s ease-in-out;
+}
+
+@keyframes slideInFooter {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add this to your nav links to stagger the animation */
+.nav-links a {
+  --nav-item-index: 1; /* Default value */
+}
+
+.nav-links a:nth-child(1) {
+  --nav-item-index: 1;
+}
+
+.nav-links a:nth-child(2) {
+  --nav-item-index: 2;
+}
+
+.nav-links a:nth-child(3) {
+  --nav-item-index: 3;
+}
+
+.nav-links a:nth-child(4) {
+  --nav-item-index: 4;
+}
+
+.nav-links a:nth-child(5) {
+  --nav-item-index: 5;
+}
+
+.nav-links a:nth-child(6) {
+  --nav-item-index: 6;
+}
+
+.nav-links a:nth-child(7) {
+  --nav-item-index: 7;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Travel and Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body{
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0c14b;
+    }
+    .services-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .services-section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .services-section p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-item {
+      background-color: #000;
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .service-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .service-item p {
+      font-size: 0.9rem;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+     /* Footer Styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 40px; /* Adjust vertical padding as needed */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align left and right content */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left p {
+  font-size: 0.9rem; /* Adjust font size */
+  line-height: 1.4; /* Adjust line height */
+  margin-bottom: 0; /* Remove any default bottom margin */
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right p {
+  font-size: 0.8rem; /* Copyright font size */
+  margin-bottom: 0; /* Remove any default bottom margin */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Tours And Travel</div>
+    <nav class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="services.html">Services</a>
+        <a href="map.html">Map</a>
+        <a href="offers.html">Offers</a>
+        <a href="About.html">About</a>
+      </nav>
+  </header>
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <p>Explore the Wide Range of travel Services we offer to make your journey unforgettable</p>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="images/plane.jpg" alt="Flight Booking">
+        <h3>Flight Booking</h3>
+        <p>Book a Domestic and International Flight at the best price</p>
+      </div>
+      <div class="service-item">
+        <img src="images/Hotel-Building-PNG-Pic.jpg" alt="Hotel Reservation">
+        <h3>Hotel Reservation</h3>
+        <p>Stay at the top rated hotel and resort during your trip</p>
+      </div>
+      <div class="service-item">
+        <img src="images/car-protection.jpg" alt="Transport Rentals">
+        <h3>Transport Rentals</h3>
+        <p>Hire a car, bike and bus for local and long distance</p>
+      </div>
+      <div class="service-item">
+        <img src="images/location.jpg" alt="Custom Tour">
+        <h3>Custom Tour</h3>
+        <p>Tailor-made package to suit your travel needs and performance</p>
+      </div>
+      <div class="service-item">
+        <img src="images/passport.jpg" alt="Visa Assistant">
+        <h3>Visa Assistant</h3>
+        <p>Get Help with your visa document and application process</p>
+      </div>
+      <div class="service-item">
+        <img src="images/insurance.jpg" alt="Travel Insurance">
+        <h3>Travel Insurance</h3>
+        <p>Secure Your trip with comprehensive travel insurance</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Travels and Tours<br>Explore the world with us for unforgettable travel experience</p>
+      </div>
+      <div class="footer-right">
+        <p>© 2025 Travel and Tour. All right reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // You can add JavaScript for any interactive features here if needed
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Offers - Travel and Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000000;
+    }
+
+     .navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+    .offers-container {
+      padding: 60px 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 40px;
+    }
+
+    .offer-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: scale(1.03);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .offer-content {
+      padding: 20px;
+    }
+
+    .offer-content h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .offer-content p {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .offer-content a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #2c5364;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .offer-content a:hover {
+      background-color: #000000;
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000000;
+      color: white;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Travel and Tour</div>
+    <nav class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="services.html">Services</a>
+        <a href="map.html">Map</a>
+        <a href="offers.html">Offers</a>
+        <a href="About.html">About</a>
+      </nav>
+  </header>
+
+  <section class="offers-container">
+    <h1>🔥 Limited-Time Travel Offers</h1>
+    <div class="offer-cards">
+
+      <div class="offer-card">
+        <img src="images/mount2.jpg" alt="Mountain Retreat">
+        <div class="offer-content">
+          <h3>20% Off - Mountain Retreat</h3>
+          <p>Enjoy peaceful trails and stunning views.</p>
+          <p><strong>Valid Till:</strong> May 31, 2025</p>
+          <a href="Mountain-Retreat.html">Explore Offer</a>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="images/b2.jpg" alt="Beach Getaway">
+        <div class="offer-content">
+          <h3>Flat ₹2,000 Off - Beach Escape</h3>
+          <p>Relax on golden sands with premium resorts.</p>
+          <p><strong>Valid Till:</strong> June 15, 2025</p>
+          <a href="Tropical Beach Getaway.html">Explore Offer</a>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="images/city.jpg" alt="City Adventure">
+        <div class="offer-content">
+          <h3>Get 1 Night Free - City Exploration</h3>
+          <p>Book 2 nights and get 3rd night free in any city!</p>
+          <p><strong>Valid Till:</strong> April 30, 2025</p>
+          <a href="city.html">Explore Offer</a>
+        </div>
+      </div>
+
+      <!-- Offer 4 -->
+<div class="offer-card">
+    <img src="images/cruise.jpg" alt="Kerala Backwaters">
+    <div class="offer-content">
+      <h3>30% Off - Kerala Backwater Cruise</h3>
+      <p>Enjoy a luxurious houseboat experience.</p>
+      <p><strong>Valid Till:</strong> June 30, 2025</p>
+      <a href="Offer-Kerala.html">Explore Offer</a>
+    </div>
+  </div>
+  
+  <!-- Offer 5 -->
+  <div class="offer-card">
+    <img src="images/vittala-temple-stone-chariot-hampi-karnataka-india.jpg" alt="North East">
+    <div class="offer-content">
+      <h3>15% Off - North East Explorer</h3>
+      <p>From Sikkim to Meghalaya – your hilly dream awaits.</p>
+      <p><strong>Valid Till:</strong> July 15, 2025</p>
+      <a href="Offer-NorthEast.html">Explore Offer</a>
+    </div>
+  </div>
+  
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Travel and Tour. All rights reserved.
+  </footer>
+
+</body>
+</html>

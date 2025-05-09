@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Travel and Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 60px 80px;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .about-image img {
+      max-width: 700px;
+      width: 200%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h1 {
+      font-size: 4.8rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #f0f0f0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #000;
+    }
+
+    .footer-nav {
+      margin-bottom: 15px;
+    }
+
+    .footer-nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer p {
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .about-text h1 {
+        text-align: center;
+      }
+
+      .about-text p {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Travel and Tour</div>
+    <nav class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="services.html">Services</a>
+        <a href="map.html">Map</a>
+        <a href="offers.html">Offers</a>
+        <a href="About.html">About</a>
+      </nav>
+  </header>
+
+  <section class="about-container">
+    <div class="about-image">
+      <img src="images/aboutimg.png" alt="Travel Illustration" />
+    </div>
+    <div class="about-text">
+      <h1>About Me</h1>
+      <p>
+        At Travel and Tour, we believe that travel is more than just reaching a destination — it's about the experiences, memories, and stories you create.
+        We’re a team of passionate travel experts 🌍, committed to crafting personalized journeys that suit your dreams.
+        Whether you're looking for a relaxing getaway 🏖️, cultural exploration 🏛️, or a thrilling adventure 🏞️ — we handle every detail with care. <br><br>
+
+        From booking flights ✈️ and hotels 📖 to organizing tours and custom packages, we deliver smooth, end-to-end travel services.
+        With a trusted global network 🌐 and focus on personal care 🤝, your journey will be seamless and unforgettable.<br><br>
+
+        Let us help you explore the world — your way.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Map.html">Map</a>
+      <a href="Offers.html">Offers</a>
+    </div>
+    <p>© 2025 Travel and Tour. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map - Travel and Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+     body{
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f0c14b;
+    }
+    /* Map Page Specific Styles (You can add more if needed) */
+    .map-page {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .map-container {
+      max-width: 1000px;
+      margin: 20px auto 0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 500px; /* Adjust height as needed for a dedicated map page */
+      border: 0;
+    }
+
+     /* Footer Styles */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 40px; /* Adjust vertical padding as needed */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align left and right content */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left p {
+  font-size: 0.9rem; /* Adjust font size */
+  line-height: 1.4; /* Adjust line height */
+  margin-bottom: 0; /* Remove any default bottom margin */
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right p {
+  font-size: 0.8rem; /* Copyright font size */
+  margin-bottom: 0; /* Remove any default bottom margin */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Tours And Travel</div>
+    <nav class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="services.html">Services</a>
+        <a href="map.html">Map</a>
+        <a href="offers.html">Offers</a>
+        <a href="About.html">About</a>
+      </nav>
+  </header>
+
+  <main class="map-page">
+    <h2>Our Location</h2>
+    <p>Find us on the map!</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.028814588775!2d73.85674487438148!3d18.52455498266388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c070709d4401%3A0x791315815a238856!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1681499758403!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Travels and Tours<br>Explore the world with us for unforgettable travel experience</p>
+      </div>
+      <div class="footer-right">
+        <p>© 2025 Travel and Tour. All right reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // You can add JavaScript for any interactive features here if needed
+  </script>
+
+</body>
+
+</html>

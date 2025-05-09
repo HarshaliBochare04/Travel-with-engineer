@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Packages - Travel and Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .packages-page {
+      padding: 60px 40px;
+    }
+
+    .package-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .package-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .package-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .package-card:hover {
+      transform: scale(1.02);
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .package-content {
+      padding: 20px;
+    }
+
+    .package-content h3 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .package-content p {
+      margin: 8px 0;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .package-price {
+      font-size: 1rem;
+      color: #000;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .package-content a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #2c5364;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .package-content a:hover {
+      background-color: #1e3c4a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Tours And Travel</div>
+    <nav class="nav-links">
+      <a href="login.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="Destination.html">Destinations</a>
+      <a href="services.html">Services</a>
+      <a href="map.html">Map</a>
+      <a href="offers.html">Offers</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Packages Section -->
+  <section class="packages-page">
+    <h1 class="package-title">Explore Our Travel Packages</h1>
+    <div class="package-cards">
+
+      <!-- Package 1: Mountain Retreat -->
+      <div class="package-card">
+        <img src="images/mount2.jpg" alt="Mountain Retreat" />
+        <div class="package-content">
+          <h3>Mountain Retreat</h3>
+          <p><strong>Duration:</strong> 5 Days / 4 Nights</p>
+          <p><strong>Includes:</strong> Hotel stay, daily breakfast, guided trekking, campfire night</p>
+          <p class="package-price">Price: ₹18,999 per person</p>
+          <a href="Mountain-Retreat.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Package 2: Tropical Beach Getaway -->
+      <div class="package-card">
+        <img src="images/hero-image.jpg" alt="Beach Getaway" />
+        <div class="package-content">
+          <h3>Tropical Beach Getaway</h3>
+          <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+          <p><strong>Includes:</strong> Beach resort stay, meals, island tour, water activities</p>
+          <p class="package-price">Price: ₹22,500 per person</p>
+          <a href="TropicalBeach.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Package 3: City Explorer (Coming Soon) -->
+      <div class="package-card">
+        <img src="images/city.jpg" alt="City Adventure" />
+        <div class="package-content">
+          <h3>City Explorer (Coming Soon)</h3>
+          <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+          <p><strong>Includes:</strong> Hotel stay, museum & heritage tours, local food trail</p>
+          <p class="package-price">Price: ₹15,000 per person</p>
+          <a href="#">Coming Soon</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Travels and Tours<br>Explore the world with us for unforgettable travel experiences</p>
+      </div>
+      <div class="footer-right">
+        <p>© 2025 Travel and Tour. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
